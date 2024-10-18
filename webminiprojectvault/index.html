@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editkaro.in Portfolio</title>
+    <link rel="stylesheet" href="minorstyles.css">
+    <style>
+        
+    body {
+        background: linear-gradient(135deg, #f8a1d1, #fbc2eb, #fad0c4, #ffe0ac, #ff7e5f);
+        background-size: 400% 400%;
+        animation: gradientAnimation 5s ease infinite;
+        font-family: 'Georgia', serif;
+        color: #333;
+        border:10px;
+    }
+
+    header {
+        text-align: center;
+        padding: 20px;
+        color: white;
+        background-color: #ff7e5f;
+    }
+    .logo{
+        width:50px;
+        height:50px;
+        border-radius: 60%;
+    }
+nav{
+    background-color: #FF0000; 
+            color: #FFFFFF;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+}.nav-right{
+    display:flex;
+    align-items: center;
+}
+    nav ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    footer {
+        background-color: #ff7e5f;
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+
+    @keyframes gradientAnimation {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            border: 5px solid lightgray;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-top-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            animation: fadeIn 2s forwards;
+        }
+        
+        img:hover {
+            border-color: skyblue;
+            transform: scale(1.05);
+        }
+
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        p {
+            margin-top: 2%;
+            text-align: center;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+line-height: 29px;
+margin-bottom: 2%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Editkaro.in Portfolio</h1>
+        <nav>
+            <img src="logo1.jpg" alt="logo" class="logo">
+            <ul>
+                <li><a href="all.html" onclick="filterVideos('all')">All</a></li>
+                <li><a href="short.html" onclick="filterVideos('short-form')">Short Form</a></li>
+                <li><a href="long.html" onclick="filterVideos('long-form')">Long Form</a></li>
+                <li><a href="game.html" onclick="filterVideos('gaming')">Gaming</a></li>
+                <li><a href="fb.html" onclick="filterVideos('football')">Football</a></li>
+                <li><a href="ecom.html" onclick="filterVideos('ecommerce')">eCommerce</a></li>
+                <li><a href="doc.html" onclick="filterVideos('documentary')">Documentary</a></li>
+                <li><a href="anime.html" onclick="filterVideos('anime')">Anime</a></li>
+                <li><a href="ads.html" onclick="filterVideos('ads')">Ads</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <table>
+        <tr>
+            <td colspan="3">
+                <img src="homema1.jpg" alt="Image 1">
+            </td>
+        </tr><br><br>
+        <tr>
+            <td colspan="3">
+                <p>
+                    Video marketing is when you use video content to promote a brand, product, service, or cause.<br>
+                    It involves planning, creating, editing, and sharing videos for different mediums. <br>From social
+                    media platforms to websites and vlogs. <mark>Marketing</mark> videos can help generate engagement,
+                    brand awareness, and leads. <br>Content marketing is a strategic marketing approach focused on creating
+                    and distributing valuable, relevant,<br> and consistent content to attract and retain a clearly defined
+                    audience — and, ultimately, to drive profitable customer action.
+                </p>
+            </td>
+        </tr><br><br>
+        <tr>
+            <td colspan="3">
+                <img src="homema.jpg" alt="Image 2">
+            </td>
+        </tr>
+    </table>
+
+    <footer>
+        <p>&copy; 2024 Editkaro.in.All Rights reserved.</p>
+    </footer>
+
+    <script src="minorjasc.js"></script>
+</body>
+</html>
